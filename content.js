@@ -5,10 +5,12 @@ const r = 10;
 class Box extends React.Component {
   render() {
     var images = [];
-    for (var j = 1; j <= r; j++) {
-      var imagename = c + "/" + c + "." + (i * r + j) + ".jpg";
-      console.log(imagename);
-      images.push(imagename);
+    if(c == "cat" || c == "dog") {
+      for (var j = 1; j <= r; j++) {
+        var imagename = c + "/" + c + "." + (i * r + j) + ".jpg";
+        console.log(imagename);
+        images.push(imagename);
+      }
     }
     var imagelist = images.map(function(imagename, index) {
       return (
