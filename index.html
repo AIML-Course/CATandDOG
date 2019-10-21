@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
+  <!-- 网页开始产生画面之前需要先处理的元件 -->
   <head>
-    <title> Stairs </title>
+    <!-- 网页标题 -->
+    <title> CAT & DOG </title>
+    <!-- 网页 icon -->
     <link rel="icon" type="image/png" href="favicon.png" />
+    <!-- 加载 Reactjs 的网路套件 -->
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- 加载 Babel 的 JavaScript 架构格式 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
   </head>
+  <!-- 网页画面的内容 -->
   <body>
+    <!-- 标题 -->
     <h2>CAT and GOD</h2><h3>Photo Gallery</h3>
+    <!-- 元件: linker -->
     <div id="linker"></div>
     <hr>
+    <!-- 元件: content -->
     <div id="content"></div>
     <hr>
+    <!-- 程序连结 -->
     <a href="https://github.com/AIML-Course/CATandDOG">Project Code</a>
+    <!-- 加载我们自己写的 JavaScript 程序 -->
     <script type="text/babel" src="linker.js"></script>
     <script type="text/babel" src="content.js"></script>
   </body>
