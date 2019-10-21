@@ -1,5 +1,8 @@
+// 定义类别
 class Link extends React.Component {
+  // 呼叫浏览器开始动态生成内容
   render() {
+    // 回传生成内容
     return(
       <div>
         <div>
@@ -22,6 +25,7 @@ class Link extends React.Component {
     );
   }
 };
+// 把 Link 类别的动态生成内容填充进 linker 元件里
 ReactDOM.render(
   <Link mode="code" />,
   document.getElementById('linker')
